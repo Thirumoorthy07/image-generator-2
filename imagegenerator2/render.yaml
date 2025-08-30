@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: image-generator
+    env: node
+    buildCommand: cd client && npm install && npm run build
+    startCommand: cd client && npm start
